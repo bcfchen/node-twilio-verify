@@ -2,7 +2,7 @@
     "name": "node-twilio-verify",
     "version": "1.0.0",
     "description": "node module for twilio phone number verification",
-    "main": "twilio-auth-service.js",
+    "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
