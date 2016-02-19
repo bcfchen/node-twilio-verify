@@ -1,0 +1,31 @@
+{
+    "name": "node-twilio-verify",
+    "version": "1.0.0",
+    "description": "node module for twilio phone number verification",
+    "main": "twilio-auth-service.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "q": "1.4.1",
+        "request": "2.69.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bcfchen/node-twilio-verify.git"
+    },
+    "keywords": [
+        "node",
+        "twilio",
+        "phone",
+        "sms",
+        "verification",
+        "code"
+    ],
+    "author": "Beck Chen <bcfchen@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bcfchen/node-twilio-verify/issues"
+    },
+    "homepage": "https://github.com/bcfchen/node-twilio-verify#readme"
+}
