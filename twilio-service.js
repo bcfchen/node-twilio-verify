@@ -5,7 +5,7 @@
 var Q = require('q');
 var request = require('request');
 
-module.exports = function twilioService() {
+var twilioService = function() {
 
     var apiEndpoint, credentials, accounts;
 
@@ -97,13 +97,10 @@ module.exports = function twilioService() {
         return deferred.promise;
     };
 
-
-    return {
-        init: function(accountSid, authToken) {
-            __initialize(accountSid, authToken);
-        },
-        create: function(resource, data, account) {
-            return __generateRequest('POST', resource, data, account);
-        }
-    }
+    this.init = __initialize;
+    this.create = __generateRequest;
+    
+    return this;
 };
+
+module.exports = twilioService;

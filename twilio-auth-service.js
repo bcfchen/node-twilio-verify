@@ -5,7 +5,7 @@
 var Q = require('q');
 var twilioService = require('./twilio-service');
 
-module.exports = function twilioAuthService() {
+var twilioAuthService = function() {
 
     var opts = {},
         attempts = {};
@@ -55,10 +55,12 @@ module.exports = function twilioAuthService() {
         return deferred.promise;
     }
 
-    return {
-        init: __init,
-        sendCode: __sendCode,
-        verifyCode: __verifyCode,
-        setFromNumber: __setFromNumber
-    }
+    this.init = __init;
+    this.sendCode = __sendCode;
+    this.verifyCode = __verifyCode;
+    this.setFromNumber = __setFromNumber;
+
+    return this;
 };
+
+module.exports = twilioAuthService;
