@@ -9,9 +9,9 @@ Most of the logic behind this module came from mcwebb's [angular-twilio-verifica
 
 ### Setup
 Require the module into your Node application with the line:
-
-TwilioAuthService = require('node-twilio-verify')
-
+```
+var TwilioAuthService = require('node-twilio-verify')
+```
 Create a new instance of TwilioAuthService, initialize with the accountSid, authToken, and set the "from" number that comes with your Twilio account:
 ```
     var accountSid = "xxxxxxxx",
