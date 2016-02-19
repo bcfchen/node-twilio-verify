@@ -7,6 +7,20 @@ Most of the logic behind this module came from mcwebb's [angular-twilio-verifica
 
 **Note: you must have a Twilio account with a valid accountSid and authToken to use this module.**
 
+### Install
+You can either install it by itself via npm:
+```
+npm install node-twilio-verify
+```
+Or include it in your package.json dependencies:
+```
+  "dependencies": {
+    ........,
+    "node-twilio-verify": "1.0.0",
+    .......
+  }
+```
+
 ### Setup
 Require the module into your Node application with the line:
 ```
