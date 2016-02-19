@@ -1,1 +1,1 @@
-module.exports = require("./twilio-auth-service");
+module.exports = require("./lib/twilio-auth-service");
